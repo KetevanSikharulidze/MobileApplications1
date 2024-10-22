@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7FF6F00"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:fontFamily="serif-monospace"
+        android:text="Home"
+        android:textColor="#FFEB3B"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/bookNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:hint="Enter Book Name: "
+        android:paddingHorizontal="120dp"
+        android:paddingVertical="12dp"
+        android:textColorHint="#FFEB3B"
+        app:layout_constraintBottom_toTopOf="@+id/pageNumberEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pageNumberEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:hint="Enter Page Number: "
+        android:paddingHorizontal="120dp"
+        android:paddingVertical="12dp"
+        android:inputType="number"
+        android:textColorHint="#FFEB3B"
+        app:layout_constraintBottom_toTopOf="@+id/bookPriceEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookNameEditText" />
+
+    <EditText
+        android:id="@+id/bookPriceEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:hint="Enter Book Price: "
+        android:paddingHorizontal="120dp"
+        android:paddingVertical="12dp"
+        android:inputType="numberDecimal"
+        android:textColorHint="#FFEB3B"
+        app:layout_constraintBottom_toTopOf="@+id/nextBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pageNumberEditText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nextBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:backgroundTint="#FFE500"
+        android:paddingHorizontal="45dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bookPriceEditText"
+        app:layout_constraintStart_toStartOf="@+id/bookPriceEditText"
+        app:layout_constraintTop_toBottomOf="@+id/bookPriceEditText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
