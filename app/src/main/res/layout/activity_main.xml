@@ -9,15 +9,19 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/inStoreEditText"
+    <CheckBox
+        android:id="@+id/inStoreCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Is in store? "
-        android:background="@drawable/edit_text_bg"
-        android:paddingVertical="10dp"
-        android:paddingHorizontal="120dp"
+        android:layout_marginBottom="20dp"
         />
+
+    <EditText
+        android:id="@+id/imageUrlEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL - texttexttexttexttexttexttexttexttexttexttext"/>
 
     <Button
         android:id="@+id/okBtn"
